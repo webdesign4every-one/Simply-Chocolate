@@ -82,4 +82,9 @@ p {
 /*Variables*/
 :root {
   --brand-color: #FD9222;
+  --light-color: #FCF1E0;
+  --bg-color: #1E1823;
+  --text-color: #111111;
+  --white-color: #FAFAFA;
+  --transition: 0.3s ease;
 }

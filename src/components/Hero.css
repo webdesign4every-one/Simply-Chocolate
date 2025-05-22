@@ -21,7 +21,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color: white;
+  color: var(--white-color);
   overflow: hidden;
 }
 @media (min-width: 768px) {
@@ -107,20 +107,32 @@
 
 .btn-primary {
   background-color: var(--brand-color);
-  color: #fff;
+  color: var(--white-color);
+}
+
+.btn-primary:hover, 
+.btn-primary:focus {
+  background-color: var(--light-color);
+  color: var(--brand-color);
 }
 
 .btn-secondary {
   background-color: transparent;
-  color: #fff;
-  border: 1px solid #fff;
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: var(--brand-color);
+  border: 1px solid var(--brand-color);
 }
 
 .scroll-link {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: #fff;
+  color: var(--white-color);
   text-decoration: none;
   font-size: 12px;
   font-weight: 500;
@@ -134,8 +146,12 @@
     letter-spacing: -0.42px;
   }
 }
+.scroll-link:hover,
+.scroll-link:focus {
+  color: var(--brand-color);
+}
 
-.arrow-icon {
+.scroll-link .arrow-icon {
   fill: var(--brand-color);
   width: 16px;
   height: 16px;
@@ -146,6 +162,10 @@
         height: 22px;
     }
 }
+.scroll-link:hover .arrow-icon,
+.scroll-link:focus .arrow-icon {
+  fill: var(--white-color);
+}
 
 .arrow-wrap {
   display: flex;
@@ -153,7 +173,7 @@
   justify-content: center;
   height: 28px;
   width: 28px;
-  background-color: white;
+  background-color: var(--white-color);
   border-radius: 50%;
 }
 @media screen and (min-width: 768px) {
@@ -161,4 +181,8 @@
     height: 38px;
     width: 38px;
   }
+}
+.scroll-link:hover .arrow-wrap,
+.scroll-link:focus .arrow-wrap {
+  background-color: var(--brand-color);
 }
